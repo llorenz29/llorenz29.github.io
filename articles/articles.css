@@ -1,0 +1,166 @@
+* { 
+  margin: 0; 
+  color: #F8EDE3; 
+}
+
+:root {
+  --background-color: #F8EDE3; 
+  --secondary-color: #C5705D; 
+  --disabled-color:#5c5c5c;
+  --delay: 0;
+	--duration: 800ms;
+	--iterations: 1;
+}
+
+body {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: var(--background-color);
+  font-family: Open Sans;
+  font-weight: 100;
+}
+
+.lg-container {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+
+.container {
+  position: relative;
+  margin: 0 auto;
+  width: 45em;
+  max-width: 100%;
+  height: 10em;
+  text-align: center; 
+}
+
+h2 {
+  font-size: 2em;
+  text-align: center;
+  color: var(--secondary-color);
+}
+
+h4 {
+  text-align: center;
+  color: var(--secondary-color);
+  padding-bottom:0.5em;
+}
+
+p,
+strong {
+  color: black;
+  font-size: 1.1em;
+  text-align: left;
+  text-transform: none;
+}
+
+.header {
+  max-width: 75em;
+  margin: 0 auto;
+  padding: 0 2.5em;
+  text-align: center;
+  display: inline-block;
+}
+
+.header a {
+  display: inline-block;
+  line-height: 2rem;
+  margin: 0.7rem;
+  color: var(--secondary-color);
+  font-size: 1.5rem;
+  transition: color 0.15s ease-in-out;
+  text-decoration: none;
+}
+
+.header a:hover,
+.header a:focus {
+  color: var(--disabled-color);
+  cursor:pointer;
+}
+
+hr {
+  height: 0.2em;
+  border-radius: 5px;
+  border-width:0;
+  background-color:var(--secondary-color);
+}
+
+.container img{
+  height:30%;
+  width:30%;
+  padding-top:3em;
+}
+
+/* https://codepen.io/equinusocio/pen/KNYOxJ */
+.container h2,
+.header a,
+hr,
+img
+ {
+    color: var(--secondary-color);
+    font-weight: bold;
+	animation-delay: var(--animation-delay, 2s);
+	animation-iteration-count: var(--iterations, 1);
+	animation-duration: var(--duration, 800ms);
+	animation-fill-mode: both;
+	animation-timing-function: cubic-bezier(0.0, 0.0, 0.2, 1);
+}
+
+.container h2, 
+.header a,
+hr,
+img {
+	--animation-delay: var(--delay, 0);
+	--animation-duration: var(--duration, 800ms);
+	--animation-iterations: var(--iterations, 1);
+	position: relative;
+	animation-name: clip-text;
+	white-space: nowrap;
+	cursor: default;
+	
+	&::after {
+		content: "";
+		position: absolute;
+		z-index: 999;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-color: var(--secondary-color);
+		transform: scaleX(0);
+		transform-origin: 0 50%;
+		pointer-events: none;
+		animation-name: text-revealer;
+	}
+}
+
+@keyframes clip-text {
+	from {
+		clip-path: inset(0 100% 0 0);
+	}
+	to {
+		clip-path: inset(0 0 0 0);
+	}
+}
+
+@keyframes text-revealer {
+	0%, 50% {
+		transform-origin: 0 50%;
+	}
+	60%, 100% {
+		transform-origin: 100% 50%;		
+	}
+
+	60% {
+		transform: scaleX(1);
+	}
+	
+	100% {
+		transform: scaleX(0);
+	}
+}

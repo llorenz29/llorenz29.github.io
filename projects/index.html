@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <link rel="stylesheet" type="text/css" href="../subStyle.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  
+  <title>[projects]</title>
+  <link rel="icon" type="image/x-icon" href="../assets/main/selfie.ico?"/>
+<body>
+
+  <div class="lg-container">
+    <div class="header">
+        <a href="../">/home</a>
+        <a href="#" class="disabled">/projects</a>
+        <a href="../thoughts/">/thoughts</a>
+        <a href="../misc/" >/misc</a>
+        <a href="../about/">/about me</a>
+    </div>
+
+    <div class="container">
+
+        <h1><span>projects</span></h1>
+        <br style="clear:both"/>
+
+        <div class="content">
+          
+          <div class="year">
+            <h2>this year (2024)</h2>
+            <hr>
+          </div>
+
+          <div class="card" id="website">
+            <div class="info">
+              <h2>This website</h2>
+              <p>Self explanatory.</p>
+            </div>
+          </div>
+
+          <div class="card" id="genAI">
+            <img src="../assets/prj/genAI/genAI.gif" alt="FLow field visualization"/>
+            <div class="info">
+              <h2>Generative Art</h2>
+              <p>Playing around with various sketches in p5.js.</p>
+            </div>
+          </div>
+        
+
+          <div class="year">
+            <h2>last year (2023)</h2>
+            <hr>
+          </div>
+
+          <div class="card" id="ecgNN">
+            <div class="info">
+              <img src="../assets/prj/ecgNN.png" alt="ECGNN"/>
+              <h2>ECGNN</h2>
+              <a class = "card-link" href="../assets/prj/701 Final Poster.pdf">poster</a>
+              <p>Cardiovascular disease poses a significant health challenge, responsible for nearly 25% of U.S. deaths and costing approximately $229 billion annually in healthcare and lost productivity. For my senior project, I sought to tackle this issue by developing a residual neural network designed to detect cardiac arrhythmias using synthetic electrocardiography.</p>
+            </div>
+          </div>
+
+          <div class="card" id="celeb-vae">
+            <div class="info">
+              <img src="../assets/prj/vae.png" alt="VAE"/>
+              <h2>Celebrity Variational Autoencoder</h2>
+              <p>Implemented a variational autoencoder to generate images of celebrities from noise input. Used Kullback–Leibler divergence as a loss function.</p>
+            </div>
+          </div>
+
+          <div class="card" id="camel-up">
+            <div class="info">
+              <img src="../assets/prj/camel.png" alt="Camel up"/>
+              <h2>Camel Up Board Game AI</h2>
+              <a class = "card-link" href="../assets/prj/Camel Up Poster.pdf">poster</a>
+              <p>Inspiration for this implementation came from previous research on stochastic board games, such as Risk, which have been optimized using reinforcement learning.</p>
+            </div>
+          </div>
+
+          <div class="year">
+            <h2>year before that (2022)</h2>
+            <hr>
+          </div>
+
+          <div class="card" id="pairHMM">
+            <div class="info">
+              <h2>Pair Hidden Markov Model for Genome Sequencing</h2>
+              <a class = "card-link" href="../assets/prj/HMM Poster.png">poster</a>
+              <p>The aim of our project was to develop a Pair Hidden Markov Model (HMM) to generate aligned sequence pairs, which are often indicative of functional significance. Unlike a traditional HMM, a Pair HMM produces an aligned pair of sequences, effectively capturing point mutations, insertions, and deletions in biological data.</p>
+            </div>
+          </div>
+
+          <div class="card" id="pred-LOS">
+            <div class="info">
+              <h2>Predicting Mortality and Length of Stay</h2>
+              <a class = "card-link" href="../assets/prj/LOS.pdf">paper</a>
+              <p>Numerous hospitals have adopted a range of statistical learning techniques to enhance the accuracy of outcomes in intensive care units. We utilize linear, logistic, and quantile regression models, along with random forests and K-nearest neighbor classification, to predict mortality, length of stay, and liver disease in ICU patients.</p>
+            </div>
+          </div>
+
+
+          <div class="year">
+            <h2>year before that (2021)</h2>
+            <hr>
+          </div>
+
+          <div class="card" id="dial-a-ride">
+            <div class="info">
+              <h2>Dial-a-Ride Optimization</h2>
+              <p>An optimization algorithm designed to determine optimal routing strategies for drivers based on multiple pickup locations. </p>
+            </div>
+          </div>
+
+          <div class="card" id="dutch-mapping">
+            <div class="info">
+              <h2>Dutch Textile Mapping</h2>
+              <p>Interactive dashboard created to display various information about textile trade in the 17th century.</p>
+            </div>
+          </div>
+
+
+          <div class="year">
+            <h2>year before that (2020)</h2>
+            <hr>
+          </div>
+
+          <div class="card last" id="pathfinding">
+            <div class="info">
+              <h2>Pathfinding Visualization</h2>
+              <p>Simple pathfinding using A*, BFS, DFS, etc. Implemented as a quarantine project just starting out.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="projects.js"></script>
+</body>
+
+</html>
