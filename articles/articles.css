@@ -51,10 +51,27 @@ h4 {
   padding-bottom:0.5em;
 }
 
-p,
-strong {
+
+em{
   color: black;
-  font-size: 1.1em;
+}
+
+a{
+    color: var(--secondary-color);
+    box-shadow: inset 0 0 0 0 var(--secondary-color);
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+
+a:hover{
+  box-shadow: inset 100px 0 0 0 var(--secondary-color);
+  color: white;
+}
+
+p,
+strong,
+li {
+  color: black;
+  font-size: 1.2em;
   text-align: left;
   text-transform: none;
 }
