@@ -49,6 +49,13 @@ h2 {
   color: var(--secondary-color);
 }
 
+h3 {
+  font-size: 1.5em;
+  text-align: left;
+  margin:auto 15px auto 15px;
+  color: var(--secondary-color);
+}
+
 .header {
   max-width: 75em;
   margin: 0 auto;
