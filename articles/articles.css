@@ -63,7 +63,7 @@ a{
 }
 
 a:hover{
-  box-shadow: inset 100px 0 0 0 var(--secondary-color);
+  /* box-shadow: inset 100px 0 0 0 var(--secondary-color); */
   color: white;
 }
 
