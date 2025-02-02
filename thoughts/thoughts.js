@@ -1,6 +1,7 @@
 //Hyperlinks
 const projectLinks = {
-    '40-Brian': '../articles/brian'
+    '40-Brian': '../articles/brian',
+    'Baseball': '../articles/baseball'
   };
 
   Object.keys(projectLinks).forEach(id => {
